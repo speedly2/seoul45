@@ -1,0 +1,55 @@
+package chapter04.loop;
+
+import java.util.Iterator;
+
+public class Loop_Example09 {
+
+	public static void main(String[] args) {
+/*
+	1번									2번
+	A									A
+	AB									BA
+	ABC									CBA
+	ABCD								DCBA
+	ABCDE								EDCBA
+	ABCDEF								FEDCBA
+	ABCDEFG								GFEDCBA
+	ABCDEFGH							HGFEDCBA
+	ABCDEFGHI							IHGFEDCBA
+	ABCDEFGHIJ							JIHGFEDCBA
+	ABCDEFGHIJK							KJIHGFEDCBA
+	ABCDEFGHIJKL						LKJIHGFEDCBA
+	ABCDEFGHIJKLM						MLKJIHGFEDCBA
+	ABCDEFGHIJKLMN						NMLKJIHGFEDCBA
+	ABCDEFGHIJKLMNO						ONMLKJIHGFEDCBA
+	ABCDEFGHIJKLMNOP					PONMLKJIHGFEDCBA
+	ABCDEFGHIJKLMNOPQ					QPONMLKJIHGFEDCBA
+	ABCDEFGHIJKLMNOPQR					RQPONMLKJIHGFEDCBA
+	ABCDEFGHIJKLMNOPQRS					SRQPONMLKJIHGFEDCBA
+	ABCDEFGHIJKLMNOPQRST				TSRQPONMLKJIHGFEDCBA
+	ABCDEFGHIJKLMNOPQRSTU				UTSRQPONMLKJIHGFEDCBA
+	ABCDEFGHIJKLMNOPQRSTUV				VUTSRQPONMLKJIHGFEDCBA
+	ABCDEFGHIJKLMNOPQRSTUVW				WVUTSRQPONMLKJIHGFEDCBA
+	ABCDEFGHIJKLMNOPQRSTUVWX			XWVUTSRQPONMLKJIHGFEDCBA
+	ABCDEFGHIJKLMNOPQRSTUVWXY			YXWVUTSRQPONMLKJIHGFEDCBA
+	ABCDEFGHIJKLMNOPQRSTUVWXYZ			ZYXWVUTSRQPONMLKJIHGFEDCBA
+ */
+		//1번
+		for (int i = 'A'; i <= 'Z'; i++) {
+			for (char j = 'A'; j <= i; j++) {
+				System.out.print(j);
+			}
+			System.out.println();
+		}
+		System.out.println("======================");
+
+		//2번
+		for (int i = 'A'; i <= 'Z'; i++) {
+			for (int j = i; j >= 'A'; j--) {
+				System.out.print((char) j);
+			}
+			System.out.println();
+		}
+	}
+
+}
