@@ -1,6 +1,6 @@
-package chapter02.operator;
+package chapter01.data;
 
-public class C019_ArithmeticConversion {
+public class C014_ArithmeticConversion {
 
 	public static void main(String[] args) {
 		// 연산 중 형 변환(산술 형변환)

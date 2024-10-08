@@ -1,6 +1,6 @@
-package chapter02.operator;
+package chapter01.data;
 
-public class C018_ExplicitConversion {
+public class C013_ExplicitConversion {
 
 	public static void main(String[] args) {
 		// 형변환(큰 -> 작 ... 강제 형변환 or 명시적 형변환)

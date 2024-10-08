@@ -6,6 +6,7 @@ public class Theater_Method {
 	
 	//멤버 변수
 	private int[][] seats = new int[7][7];
+	private final Scanner scan = new Scanner(System.in);
 
 	
 	//멤버 메서드
@@ -20,11 +21,9 @@ public class Theater_Method {
 	}
 	
 	public int inputCnt() {
-		Scanner scan = new Scanner(System.in);
-		int result = 0;
 		
 		System.out.print("몇개의 좌석을 예약하시겠습니까? : ");				
-		result = scan.nextInt();
+		int result = scan.nextInt();
 		
 		return result;
 	}
@@ -60,8 +59,6 @@ public class Theater_Method {
 	}
 	
 	public void reservationSeats(int cnt) {
-		Scanner scan = new Scanner(System.in);
-		
 		for (int i = 0; i < cnt; i++) {
 			System.out.print("예약할 좌석의 행 : ");
 			int row = scan.nextInt();

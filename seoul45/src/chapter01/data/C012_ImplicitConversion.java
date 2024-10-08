@@ -1,6 +1,6 @@
-package chapter02.operator;
+package chapter01.data;
 
-public class C017_ImplicitConversion {
+public class C012_ImplicitConversion {
 
 	public static void main(String[] args) {
 		// 형변환(작 -> 큰 ... 자동 형변환 or 묵시적 형변환)
