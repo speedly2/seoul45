@@ -1,9 +1,13 @@
 package chapter20.enum_part;
 
-enum Direction { EAST, WEST, SOUTH, NORTH };
-enum Yoil { SUN, MON, TUE, WED, THR, FRI, SAT };
+enum Direction { 
+	EAST, WEST, SOUTH, NORTH 
+};
+enum Yoil { 
+	SUN, MON, TUE, WED, THR, FRI, SAT 
+};
 
-public class C173_enum1 {
+public class C174_enum1 {
 
 	public static void main(String[] args) {
 /*
@@ -23,12 +27,17 @@ public class C173_enum1 {
  */
 		Direction origin = Direction.EAST;		// 동쪽으로 초기화
 		origin = Direction.SOUTH;				// 남쪽으로 대입
-		if (origin == Direction.WEST) { } 		// 서쪽이면
+		if (origin == Direction.WEST)  { } 		// 서쪽이면
 		if (origin != Direction.NORTH) { }		// 북쪽이 아니면
 		
 		System.out.println(origin);
 //		origin = 9;							// 에러
 //		if (origin == Yoil.SUN) { }			// 에러
+		
+		//비교
+		System.out.println(origin);
+		System.out.println(Direction.SOUTH);
+		System.out.println(origin == Direction.SOUTH);
 	}
 
 }

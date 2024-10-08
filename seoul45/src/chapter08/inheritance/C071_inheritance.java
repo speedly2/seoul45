@@ -1,61 +1,48 @@
 package chapter08.inheritance;
 
-class Human {
-	int age;
+class A {
 	String name;
+	private int age;
 	
-	Human(int age, String name) {
-		System.out.println("== Human 생성자 ==");
-		this.age = age;
-		this.name = name;
-	}
-	
-	void intro() {
-		System.out.println("안녕, " + age + "살 " + name + "이라고 해.");
+	public void method() {
+		System.out.println(name +  " 메서드 출력");
 	}
 }
 
-class Student extends Human {
-	int stnum;
-	String major;
-	
-	Student(int age, String name, int stnum, String major) {
-		super(age, name);
-		this.stnum = stnum;
-		this.major = major;
-	}
-	
-	void study() {
-		System.out.println("하늘천 따지 검을현 누를황");
+class B extends A {
+
+	@Override
+	public void method() {
+		System.out.println(name + " 메서드 출력");
+//		System.out.println(age);	// err
 	}
 }
-
-//class Graduate extends Student {
-//	String thesis;
-//	
-//	Graduate(int age, String name, int stnum, String major, String thesis) {
-//		super(age, name, stnum, major);
-//		this.thesis = thesis;
-//	}
-//	
-//	void research() {
-//		System.out.println("궁시렁 궁시렁. 뭘 연구해야 떼돈을 벌까?");
-//	}
-//}
 
 public class C071_inheritance {
+	
+/*
+	<< 상속 >>
+
+	각자의 객체를 만들어 객체들끼리 접근하고 연결을 지을 뿐 아니라
+	공통점을 가지고 있는 객체들끼리 어떤 관계를 나타내기 위함
+	
+		상속은 부모가 자식에게 물려주는 행위다.
+		객체 지향 프로그램에서도 부모(상위) 클래스의 멤버를 
+		자식(하위) 클래스에 물려주어 자식 클래스가 갖고 있는 것처럼 사용할 수 있다.
+	
+	IS-A 관계(is a relationship, inheritance)는 일반적인 개념과 구체적인 개념의 관계입니다.
+	즉, 일반 클래스를 구체화 하는 상황에서 상속을 사용합니다.
+ */
 
 	public static void main(String[] args) {
-		Human kim = new Human(29, "김상형");
-		kim.intro();
-		Student lee = new Student(42, "이승우", 9312345, "경영");
-		lee.intro();
-		lee.study();
+		A a = new A();
+		a.name = "홍길동";
+		a.method();
 		
-//		Graduate park = new Graduate(35, "박대희", 95001122, "전산", "웹 보안에 대한 연구");
-//		park.intro();
-//		park.study();
-//		park.research();
+		B b = new B();
+		b.name = "이순신";
+		b.method();
+		
 	}
 
 }

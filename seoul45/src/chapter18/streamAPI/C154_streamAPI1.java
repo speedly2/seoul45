@@ -12,7 +12,7 @@ public class C154_streamAPI1 {
 /*
 	stream 의 동작 방식
 	stream -> filter -> sorted -> limit -> map -> reduce
-	[ 준비 ]  [             중간 연산             ]  [최종연산]
+	[ 준비 ]   [             중간 연산            ]    [최종연산]
 	
 	method 참조 방식 ::
  */

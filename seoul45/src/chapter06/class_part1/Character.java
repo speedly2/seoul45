@@ -9,6 +9,7 @@ public class Character {
 	private int dex;			//민첩 스탯
 	private int intel;			//지능 스탯
 	
+	//초기화 블럭 (인스턴스 생성시 해당 변수 초기화)
 	{
 		this.level = 1;
 		this.str = 1;
@@ -32,13 +33,14 @@ public class Character {
 		this.intel = intel;
 	}
 	
+	//메서드
 	public void skill() {
 		if(this.job.equals("마법사"))
 			System.out.println("파이어볼!!");
 		else if(this.job.equals("전사"))
 			System.out.println("배쉬!!");
 		else if(this.job.equals("궁수"))
-			System.out.println("크리티컬 샷!!");
+			System.out.println("크리티컬!!");
 		else
 			System.out.println("기본공격!!");
 	}

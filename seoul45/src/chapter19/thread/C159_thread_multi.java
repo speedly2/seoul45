@@ -13,13 +13,13 @@ public class C159_thread_multi {
 		BeepThread beep = new BeepThread(5, 1000);
 		beep.start();
 		
-		for (int num = 0;num < 30;num++) {
+		for (int num = 0; num < 30; num++) {
 			System.out.print("O");
 			try { Thread.sleep(200); } catch (InterruptedException e) { ; }
 		}
 	}
-
 }
+
 class PrintThread2 extends Thread {
 	char ch;
 	PrintThread2(char ch) {

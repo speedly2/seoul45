@@ -20,7 +20,7 @@ public class C011_TextBlock {
 		// 텍스트 블록
 		String human = """
 				이름 : 김상형    \s        
-				나이 : 39        \s                
+				나이 : 39               
 				직업 : 프로그래머\s
 				""";
 		System.out.println(human);

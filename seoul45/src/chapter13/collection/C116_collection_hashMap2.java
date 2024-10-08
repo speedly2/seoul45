@@ -11,20 +11,20 @@ class Human {
 		this.name = name;
 	}
 	
-	@Override
-	public int hashCode() {
-		return name.length() + age;
-	}
-	
-	@Override
-	public boolean equals(Object obj) {
-		if (obj instanceof Human) {
-			Human other = (Human) obj;
-			return (age == other.age && name.equals(other.name));
-		} else {
-			return false;
-		}
-	}
+//	@Override
+//	public int hashCode() {
+//		return name.length() + age;
+//	}
+//	
+//	@Override
+//	public boolean equals(Object obj) {
+//		if (obj instanceof Human) {
+//			Human other = (Human) obj;
+//			return (age == other.age && name.equals(other.name));
+//		} else {
+//			return false;
+//		}
+//	}
 }
 public class C116_collection_hashMap2 {
 

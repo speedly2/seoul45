@@ -3,6 +3,7 @@ package chapter11.object;
 public class C098_record {
 /*
 	record
+	자바 14에서 소개된 새로운 클래스 유형으로 기존 클래스에 비해 더 간결하게 작성할 수 있음
 	불변(immutable) 객체를 쉽게 생성할 수 있도록 하는 유형의 클래스
 	  * 필수	
 		- 모든 필드에 final 선언
@@ -18,6 +19,7 @@ public class C098_record {
 		- hashcode 메서드
 		- toString 메서드
 	
+	- DTO 사용
 	Q. 레코드(record)를 JPA의 Entity 클래스로 사용할 수 없을까요?
 		레코드는 바이트코드로 본 것처럼 final 클래스(상속불가)이고, 
 		abstract로 선언할 수 없습니다.
@@ -37,7 +39,12 @@ public class C098_record {
 
 }
 
+class A {}
+interface B {}
+
 record Member(String name, int memberCode) {
+//record Member(String name, int memberCode) extends A {
+//record Member(String name, int memberCode) implements B {
 /*
 	레코드 클래스를 사용하면 훨씬 간결한 방식으로 동일한 불변 데이터 객체 정의할 수 있음
  	컴파일러는 헤더를 통해 내부 필드를 추론
@@ -47,4 +54,12 @@ record Member(String name, int memberCode) {
      - 레코드는 암묵적으로 final 클래스(상속불가)이고, abstract 선언 불가
      - 다른 클래스를 상속(extends) 받을 수 없음, 인터페이스 구현(implements)은 가능
  */
+	// 사용자 정의 생성자를 만들 수 있으나 직접 초기화해줘야 함
+	public Member(String name, int memberCode) {
+		this.name = name;
+		this.memberCode = memberCode;
+	}
+	public Member(int memberCode) {
+		this("홍길동", memberCode);
+	}
 }

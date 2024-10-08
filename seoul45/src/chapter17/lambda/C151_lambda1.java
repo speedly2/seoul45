@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class C150_lambda1 {
+public class C151_lambda1 {
 
 	public static void main(String[] args) {
 		ArrayList<String> list = new ArrayList<>();

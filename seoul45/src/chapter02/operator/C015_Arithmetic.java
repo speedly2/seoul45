@@ -1,6 +1,6 @@
 package chapter02.operator;
 
-public class C012_Arithmetic {
+public class C015_Arithmetic {
 
 	public static void main(String[] args) {
 		// 산술 연산자

@@ -1,6 +1,6 @@
 package chapter07.array;
 
-public class ArrayEx1 {
+public class Array_Example06 {
 
 	public static void main(String[] args) {
 		String pop = "Yesterday all my troubles seemed so far away" +

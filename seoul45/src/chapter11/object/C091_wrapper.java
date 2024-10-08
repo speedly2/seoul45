@@ -17,6 +17,7 @@ public class C091_wrapper {
 
 		그리고 Wrapper 클래스들 (Integer, Boolean, Float 등등) 은
 		생성자들이 Deprecated 되었습니다. (자바9 이후) 저 클래스들 생성자 호출 권장하지 않아요.
+		자바에서는 오래된 API나 더 이상 권장되지 않는 기능에 대해 @Deprecated 어노테이션을 사용하여 이를 표시합니다
  */
 		
 		//boxing 기본형 -> 참조형

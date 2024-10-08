@@ -1,7 +1,5 @@
 package chapter04.loop;
 
-import java.util.Iterator;
-
 public class Loop_Example09 {
 
 	public static void main(String[] args) {
@@ -35,7 +33,8 @@ public class Loop_Example09 {
 	ABCDEFGHIJKLMNOPQRSTUVWXYZ			ZYXWVUTSRQPONMLKJIHGFEDCBA
  */
 		//1번
-		for (int i = 'A'; i <= 'Z'; i++) {
+		// A = 65, E = 69
+		for (int i = 'A'; i <= 'E'; i++) {
 			for (char j = 'A'; j <= i; j++) {
 				System.out.print(j);
 			}
@@ -44,7 +43,7 @@ public class Loop_Example09 {
 		System.out.println("======================");
 
 		//2번
-		for (int i = 'A'; i <= 'Z'; i++) {
+		for (int i = 'A'; i <= 'E'; i++) {
 			for (int j = i; j >= 'A'; j--) {
 				System.out.print((char) j);
 			}

@@ -22,7 +22,7 @@ public class C114_collection_treeSet {
 
 		// TreeSet을 이용한 로또
 		TreeSet<Integer> lotto = new TreeSet<>();
-		for (int i = 0; lotto.size() < 6; i++) {
+		for (; lotto.size() < 6;) {
 			lotto.add((int) (Math.random()*45 + 1));			
 		}
 		for (Integer n : lotto) {

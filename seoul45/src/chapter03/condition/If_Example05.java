@@ -29,12 +29,16 @@ public class If_Example05 {
 		
 //		if( year % 400 == 0 || (year % 4 == 0 && year % 100 != 0) )
 //			result = "윤년";
+		// 논리 연산자 우선순위가  &&가 ||보다 높음
+		// year % 4 == 0 && year % 100 != 0 || year % 400 == 0
+		// 그래서 이 식과 어차피 결과는 같음
 		
 		if((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
 			result = "윤년";
 		
 		System.out.println(result);
 		
+		// 1586년인가 이후 부터의 연도에 대해서 계산결과 동일(그레고리력)
 		GregorianCalendar gc = new GregorianCalendar();
 		String result2 = gc.isLeapYear(year) ? "윤년" : "평년";
 		System.out.println(result2);

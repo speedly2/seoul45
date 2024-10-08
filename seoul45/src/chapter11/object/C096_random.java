@@ -11,7 +11,7 @@ public class C096_random {
 		}
 		
 		for (int i = 0; i < 5; i++) {
-			System.out.println((int)(Math.random() * 12) + 1);
+			System.out.println((int)(Math.random() * 10) + 1);
 		}
 		
 		//Random

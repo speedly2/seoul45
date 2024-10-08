@@ -39,6 +39,7 @@ public class C092_string1 {
 		String str4 = "문자열";
 		System.out.printf("i = %d, d = %f, str = %s\n", i, d, str4);
 		
+		// 인덱스 지정자 : 포맷 지정자 앞에 위치하여 출력할 값의 순서를 지정하는 데 사용
 		System.out.printf("i = %3$d, d = %2$f, str = %1$s\n", str4, d, i);
 		System.out.printf("정수 = %1$d, i = %1$d", i);
 		

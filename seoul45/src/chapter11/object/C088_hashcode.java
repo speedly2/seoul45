@@ -39,13 +39,28 @@ public class C088_hashcode {
 		Student st3 = st1;
 		Student st4 = new Student("홍길동", 20240003);
 		
+		System.out.println("=== 주소 ===");
 		System.out.println(st1 == st2);
 		System.out.println(st1 == st3);
 		System.out.println(st1 == st4);
 		
+		System.out.println("=== equals ===");
 		System.out.println(st1.equals(st2));
 		System.out.println(st1.equals(st3));
 		System.out.println(st1.equals(st4));
+		
+		System.out.println("=== hashcode ===");
+		System.out.println(st1.hashCode());
+		System.out.println(st2.hashCode());
+		System.out.println(st3.hashCode());
+		System.out.println(st4.hashCode());
+		
+		System.out.println("=== toString ===");
+		System.out.println(st1);
+		System.out.println(st2);
+		System.out.println(st3);
+		System.out.println(st4.toString());
+		
 	}
 
 }

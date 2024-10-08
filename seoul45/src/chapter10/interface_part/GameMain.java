@@ -7,7 +7,7 @@ public class GameMain {
 	public static void main(String[] args) {
 
 		/*
-		 * ABCDE_rpg 게임
+		 * ABCDE Game, 게임 예제
 		 * 1. 프로그램이 실행되면 메뉴를 출력한다.
 		 * 2. 메뉴는 (1.캐릭터 생성, 2.캐릭터 정보, 3.전직하기, 4.공격하기, 0.종료)
 		 *    - (1.캐릭터 생성)을 선택한 경우, 이름과 스탯값을 초기값으로 하는 Novice(평민)클래스형 인스턴스를 생성한다.

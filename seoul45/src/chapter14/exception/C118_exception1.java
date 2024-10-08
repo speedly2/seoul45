@@ -25,13 +25,13 @@ public class C118_exception1 {
 //			System.out.println("c = " + c);
 //		}
 		
-		try {
-			c = a / b;
-			System.out.println("c = " + c);
-		} catch (Exception e) {
-			e.printStackTrace();
-			System.out.println("0으로 나눌 수 없습니다.");
-		}
+//		try {
+//			c = a / b;
+//			System.out.println("c = " + c);
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//			System.out.println("0으로 나눌 수 없습니다.");
+//		}
 		System.out.println("프로그램 실행 완료");
 	}
 

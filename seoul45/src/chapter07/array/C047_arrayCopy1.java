@@ -7,10 +7,13 @@ public class C047_arrayCopy1 {
 		int[] ar = { 1, 2, 3 }, ar2 = { 1, 2, 3 };
 		int[] ar3 = ar;
 
-		System.out.println("i와 i2 : " + (i == i2 ? "같다":"다르다"));
+		System.out.println("i와 i2   : " + (i == i2 ? "같다":"다르다"));
 		System.out.println("ar과 ar2 : " + (ar == ar2 ? "같다":"다르다"));
+		System.out.println(ar);
+		System.out.println(ar2);
 		System.out.println("ar과 ar3 : " + (ar == ar3 ? "같다":"다르다"));
-		System.out.println();
+		System.out.println(ar);
+		System.out.println(ar3);
 	}
 
 }

@@ -25,9 +25,9 @@ public class If_Example01 {
 		if (width <= 0 || height <= 0) {
 			System.out.println("종료");
 		} else if (width == height) {
-			System.out.println("정사각형의 넓이는 " + area + "입니다.");
+			System.out.println("'정사각형'의 넓이는 " + area + "입니다.");
 		} else {
-			System.out.println("직사각형의 넓이는 " + area + "입니다.");
+			System.out.println("'직사각형'의 넓이는 " + area + "입니다.");
 		}
 	}
 

@@ -7,7 +7,7 @@ public class C032_nestloop2 {
 	public static void main(String[] args) {
 		// 숫자 맞추기
 		Scanner scanner = new Scanner(System.in);
-		int num = (int)(Math.random() * 10) + 1;
+		int num = (int)(Math.random() * 10) + 1;	//1~10
 		for (;;) {
 			System.out.print("숫자를 맛춰 보세요(1~10) : ");
 			int input = scanner.nextInt();

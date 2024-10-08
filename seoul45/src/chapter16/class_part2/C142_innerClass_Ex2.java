@@ -8,7 +8,7 @@ public class C142_innerClass_Ex2 {
 		
 		// 내부 클래스 호출
 		Human.Name name = kim.new Name("순신", "이");
-		System.out.print(name.family + name.first + ":");
+		System.out.print(name.family + name.first + " : ");
 		name.outAge();
 	}
 

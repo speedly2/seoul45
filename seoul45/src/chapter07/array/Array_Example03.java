@@ -1,5 +1,6 @@
 package chapter07.array;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Array_Example03 {
@@ -22,7 +23,9 @@ public class Array_Example03 {
 		
 		System.out.print("변경 전 : ");
 		for (int i = 0; i < 10; i++) {
-			int random = (int)(Math.random()*10);
+			int random = (int)(Math.random()*10 + 1);
+//			Random r = new Random();
+//			int random = r.nextInt(11);
 			arr[i] = random;
 			System.out.print(arr[i] + " ");
 		}

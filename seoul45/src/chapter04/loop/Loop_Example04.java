@@ -4,6 +4,7 @@ public class Loop_Example04 {
 
 	public static void main(String[] args) {
 /*
+		수열 출력
 		1번				2번				3번
 		0 0 0 0 0 		0 0 0 0 0		0 1 2 3 4 
 		0 0 0 0 0 		1 1 1 1 1		0 1 2 3 4 

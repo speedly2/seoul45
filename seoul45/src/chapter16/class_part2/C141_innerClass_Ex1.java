@@ -47,8 +47,8 @@ class Util {	//3
 		System.out.println(name.family + name.first + "이라고 해.");
 	}
 
-	static void outHuman(Human who) {
-		who.intro();
+	static void outHuman(Human human) {
+		human.intro();
 	}
 }
 
@@ -62,7 +62,7 @@ public class C141_innerClass_Ex1 {
 		kim.intro();
 		kim.name.outAge();	//2
 		kim.name.outWho();	//3
-		
+		Util.outName(kim.new Name("길동", "홍"));
 	}
 
 }

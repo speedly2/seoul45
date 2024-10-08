@@ -22,14 +22,17 @@ public class C059_overloading {
 		System.out.println(a);
 	}
 	
+	// 파라미터 개수 차이
 	static void getMax(int a, double b) {
 		System.out.println(a + b);
 	}
 	
+	// 파라미터 순서 차이
 	static void getMax(double b, int a) {
 		System.out.println(a * b);
 	}
 
+	// 파라미터 타입 차이
 	static int getMax(int a, int b) {
 		if (a > b) {
 			return a;
@@ -38,6 +41,7 @@ public class C059_overloading {
 		}
 	}
 	
+	// 파라미터 타입 차이
 	static double getMax(double a, double b) {
 		if (a > b) {
 			return a;

@@ -17,7 +17,7 @@ public class C028_for1 {
 		
 		// 짝수 합
 		int sum2 = 0;
-		for (int i = 1; i <= 100; i = i + 2){
+		for (int i = 0; i <= 100; i = i + 2){
 			sum2 = sum2 + i;
 		}
 		System.out.println("합계2 = " + sum2);

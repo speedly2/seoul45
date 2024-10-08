@@ -18,7 +18,7 @@ public class Array_Example05_B {
 		while(cnt <= num) {											//1부터 받고 싶은 행운번호의 개수만큼을 반복
 			TreeSet<Integer> ts = new TreeSet<>();					//TreeSet객체 생성
 			
-			for (int i = 0; ts.size() < 6; i++) {
+			for (; ts.size() < 6;) {
 				ts.add((int)(Math.random()*45 + 1));				//Math.random()을 통해 1~45 사이의 난수 생성
 			}	
 			

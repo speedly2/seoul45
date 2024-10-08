@@ -3,8 +3,8 @@ package chapter07.array;
 public class C050_objectCopy2 {
 
 	public static void main(String[] args) {
-		Book bookArray1[] = new Book[3];
-		Book bookArray2[] = new Book[3];
+		Book[] bookArray1 = new Book[3];
+		Book[] bookArray2 = new Book[3];
 		
 		bookArray1[0] = new Book("태백산맥", "조정래");
 		bookArray1[1] = new Book("데미안", "헤르만 헤세");

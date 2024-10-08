@@ -40,7 +40,7 @@ class AA {
 	}
 }
 
-class BB extends AA {
+final class BB extends AA {
 
 	@Override
 	void method() {
@@ -53,5 +53,8 @@ class BB extends AA {
 //	final void finalMethod() {
 //		System.out.println("final method BB");
 //	}
-	
 }
+
+//class CC extends BB {	// err
+//	
+//}

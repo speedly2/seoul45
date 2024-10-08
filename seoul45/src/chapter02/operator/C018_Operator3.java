@@ -1,6 +1,6 @@
 package chapter02.operator;
 
-public class C015_Operator3 {
+public class C018_Operator3 {
 
 	public static void main(String[] args) {
 		// 논리 연산자

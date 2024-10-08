@@ -27,7 +27,6 @@ public class C073_overriding1 {
 			public void methodA() {
 				System.out.println("B : " + num);
 			}
-			
 		}
 		
 		A a = new A();

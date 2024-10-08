@@ -33,10 +33,9 @@ public class Theater {
 		 * 				   "x행x열은 예약된 좌석입니다."라는 문구를 출력하고, 다시 행과 열을 입력 받는다.
 		 * */
 		
-		
 		Theater_Method tm = new Theater_Method();
 		Scanner scan = new Scanner(System.in);
-		int num = 0, row = 0, col = 0, cnt = 0;
+		int num = 0, cnt = 0;
 		
 		tm.printText(3);
 		while(true) {

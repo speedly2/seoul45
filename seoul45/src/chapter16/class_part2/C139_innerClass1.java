@@ -1,6 +1,6 @@
 package chapter16.class_part2;
 
-class AA {		//AA는 B의 외부 클래스
+class AA {		//AA는 BB의 외부 클래스
 	int i = 100;
 	BB b = new BB();
 	

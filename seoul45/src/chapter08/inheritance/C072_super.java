@@ -1,20 +1,13 @@
 package chapter08.inheritance;
 
-import java.time.LocalDate;
-
-class Human2 {
+class Human {
 	int age;
 	String name;
-
-	Human2(int age, String name) {
+	
+	Human(int age, String name) {
+		System.out.println("== Human 생성자 ==");
 		this.age = age;
 		this.name = name;
-	}
-	
-	Human2(float birth, String name) {
-		this(0, name);		// 자기자신의 이름이므로 Human2()는 생성자가 된다
-		LocalDate now = LocalDate.now();
-		this.age = now.getYear() - (int)birth + 1;
 	}
 	
 	void intro() {
@@ -22,34 +15,49 @@ class Human2 {
 	}
 }
 
-class Student2 extends Human2 {
+class Student extends Human {
 	int stnum;
 	String major;
 	
-	Student2(int age, String name, int stnum, String major) {
-		super(age, name);	// 부모의 이름이므로 Human2(age, name) 생성자를 가리킨다
+	Student(int age, String name, int stnum, String major) {
+		super(age, name);
+		System.out.println("== Student 생성자 ==");
 		this.stnum = stnum;
 		this.major = major;
 	}
 	
-	Student2(float birth, String name, int stnum, String major) {
-		super(birth, name);
-		this.stnum = stnum;
-		this.major = major;
-	}
-
 	void study() {
-		System.out.println("하늘천 따지 검을현 누를황");
+		System.out.println("이름: " + super.name + ", 학번: " + stnum + ", 전공: " + major);
 	}
 }
+
+//class Graduate extends Student {	// Graduate Student 대학원생
+//	String thesis;	// 논문
+//	
+//	Graduate(int age, String name, int stnum, String major, String thesis) {
+//		super(age, name, stnum, major);
+//		System.out.println("== Graduate 생성자 ==");
+//		this.thesis = thesis;
+//	}
+//	
+//	void research() {
+//		System.out.println("논문: " + thesis + ", 저자: " + super.name);
+//	}
+//}
 
 public class C072_super {
 
 	public static void main(String[] args) {
-		Student2 kim = new Student2(39, "노정란", 9908123, "건축");
+		Human kim = new Human(29, "김상형");
 		kim.intro();
-		Student2 bae = new Student2(1989.10f, "백지영", 1125034, "간호");
-		bae.intro();
+		Student lee = new Student(42, "이승우", 9312345, "경영");
+		lee.intro();
+		lee.study();
+		
+//		Graduate park = new Graduate(35, "박대희", 95001122, "전산", "웹 보안에 대한 연구");
+//		park.intro();
+//		park.study();
+//		park.research();
 
 	}
 

@@ -18,11 +18,11 @@ public class C112_collection_linkedList2 {
 		
 		System.out.println();
 		// 정렬
-		Collections.sort(arName);
+//		Collections.sort(arName);
 		// 역순정렬
 //		Collections.reverse(arName);
 		// 무작위
-//		Collections.shuffle(arName);
+		Collections.shuffle(arName);
 		
 		for(String name : arName) {
 			System.out.print(name + " ");

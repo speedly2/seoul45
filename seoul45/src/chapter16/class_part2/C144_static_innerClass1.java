@@ -11,6 +11,7 @@ class OutClass2{
 		void inTest() {
 			System.out.println("InStaticClass inNum = " + inNum + "(내부 클래스의 인스턴스 변수 사용)");
 			System.out.println("InStaticClass sInNum = " + sInNum + "(내부 클래스의 정적 변수 사용)");
+//			System.out.println("OutClass num = " + OutClass2.num + "(외부 클래스의 인스턴스 변수 사용)");
 			System.out.println("OutClass sNum = " + sNum + "(외부 클래스의 정적 변수 사용)");
 		}
 		

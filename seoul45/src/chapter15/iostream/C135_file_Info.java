@@ -5,7 +5,7 @@ import java.io.File;
 public class C135_file_Info {
 
 	public static void main(String[] args) {
-		File f = new File("C:\\eclipseWS\\fileTest.txt");
+		File f = new File("C:\\eclipse_file_directory\\fileTest.txt");
 		if (f.exists()) {
 			if (f.isFile()) {
 				System.out.println("파일입니다.");

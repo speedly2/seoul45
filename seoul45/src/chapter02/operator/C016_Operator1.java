@@ -1,6 +1,6 @@
 package chapter02.operator;
 
-public class C013_Operator1 {
+public class C016_Operator1 {
 
 	public static void main(String[] args) {
 		// 대입 연산자

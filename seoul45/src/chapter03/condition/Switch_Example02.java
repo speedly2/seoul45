@@ -23,19 +23,36 @@ public class Switch_Example02 {
 		System.out.print("정수2 입력: ");
 		int b = scan.nextInt();
 		
+		
+		// switch
 		switch (op) {
-			case "+" -> System.out.println("결과: " + (a + b));
-			case "-" -> System.out.println("결과: " + (a - b));
-			case "*" -> System.out.println("결과: " + (a * b));
-			case "/" -> {
+			case "+" : System.out.println("결과: " + (a + b)); break;
+			case "-" : System.out.println("결과: " + (a - b)); break;
+			case "*" : System.out.println("결과: " + (a * b)); break;
+			case "/" : {
 				if (b == 0) {
 					System.out.println("0으로 나눌 수 없습니다.");
 					break;
 				}
 				System.out.println("결과: " + (a / b));
 			}
-			default  -> System.out.println("잘못 입력하셨습니다.");
+			default  : System.out.println("잘못 입력하셨습니다."); break;
 		}
+		
+		// switch 표현식
+//		switch (op) {
+//			case "+" -> System.out.println("결과: " + (a + b));
+//			case "-" -> System.out.println("결과: " + (a - b));
+//			case "*" -> System.out.println("결과: " + (a * b));
+//			case "/" -> {
+//				if (b == 0) {
+//					System.out.println("0으로 나눌 수 없습니다.");
+//					break;
+//				}
+//				System.out.println("결과: " + (a / b));
+//			}
+//			default  -> System.out.println("잘못 입력하셨습니다.");
+//		}
 		
 	}
 

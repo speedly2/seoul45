@@ -1,6 +1,6 @@
 package chapter20.enum_part;
 
-public class C175_enum3 {
+public class C176_enum3 {
 
 	public static void main(String[] args) {
 /*
@@ -38,6 +38,6 @@ public class C175_enum3 {
 			length = bytenum;
 		}
 		String getName() { return typeName; }
-		int getLength() { return length; }
-	}
+		int getLength()  { return length;   }
+	};
 }

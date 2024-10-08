@@ -38,6 +38,7 @@ public class C101_generic3 {
         FruitBox2<Apple, Banana> box2 = new FruitBox2<>();
         box2.add(new Apple(), new Banana());
         box2.add(new Apple(), new Banana());
+//        box2.add(new Fruit(), new Banana());
 	}
 
 }

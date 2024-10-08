@@ -30,8 +30,12 @@ public class C145_static_innerClass2 {
 		Human3 kim = new Human3(29, "상형", "김");
 		kim.intro();
 		
+		// 외부 클래스의 인스턴스를 통해 객체를 생성할 수 없습니다.
+//		Human3.Name name = kim.new Name("길동", "홍");		//에러
+
 		Human3.Name name = new Human3.Name("순신", "이");
 		System.out.println("이름 : " + name.family + name.first);
+		
 	}
 
 }

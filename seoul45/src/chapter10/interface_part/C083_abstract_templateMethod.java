@@ -4,11 +4,11 @@ abstract class Car {
 	public abstract void drive();
 	public abstract void stop();
 	
-	public void startCar() {
+	private void startCar() {
 		System.out.println("시동을 켭니다.");
 	}
 	
-	public void turnOff() {
+	private void turnOff() {
 		System.out.println("시동을 끕니다.");
 	}
 	
@@ -54,7 +54,7 @@ class ManualCar extends Car {
 public class C083_abstract_templateMethod {
 
 	public static void main(String[] args) {
-		// 추상클래스를 이용한 템플릿 메서드		
+		// 추상클래스를 이용한 템플릿 메서드
 		System.out.println("=== 자율 주행하는 자동차 ===");
 		Car myCar = new AICar();
 		myCar.run();
@@ -64,4 +64,17 @@ public class C083_abstract_templateMethod {
 		hisCar.run();
 	}
 
+}
+
+abstract class AA {
+	abstract void methodA();
+	abstract void methodB();
+}
+abstract class BB extends AA {
+	@Override
+	void methodA() { }
+}
+class CC extends BB {
+	@Override
+	void methodB() { }
 }

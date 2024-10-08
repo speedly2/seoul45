@@ -17,7 +17,9 @@ public class C045_enhancedForLoop1 {
 		int[] score2 = { 88, 94, 72, 75, 23 };
 		for (int s : score2) {
 			s++;
+			System.out.print(s + " ");
 		}
+		System.out.println();
 		System.out.println("score[0] = " + score2[0]);
 		
 	}

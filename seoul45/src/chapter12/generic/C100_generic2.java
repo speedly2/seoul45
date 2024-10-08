@@ -29,13 +29,14 @@ public class C100_generic2 {
 		arNum.add("문자열");
 //		int value = arNum.get(0);	// object라 캐스팅 필요
 		int value = (int) arNum.get(0);
-		// int temp = (int)arNum.get(1);
 		System.out.println(value);
+//		int temp = (int)arNum.get(1);
+//		System.out.println(temp);
 		
 		// 데이터타입을 명시했으므로 다른 타입 사용시 에러
 		ArrayList<Integer> arNum2 = new ArrayList<Integer>();
 		arNum2.add(1);
-//		arNum.add("문자열");
+//		arNum2.add("문자열");	//err
 		int value2 = arNum2.get(0);
 		System.out.println(value2);
 		

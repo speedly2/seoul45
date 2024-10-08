@@ -11,7 +11,7 @@ public class C042_twoDimension_array1 {
 
 		for (int student = 0;student < score.length; student++) {
 			System.out.print((student + 1) + "번 학생의 성적 : ");
-			for (int subject = 0;subject < score[0].length;subject++) {
+			for (int subject = 0;subject < 4;subject++) {
 				System.out.print(score[student][subject] + " ");
 			}
 			System.out.println("");

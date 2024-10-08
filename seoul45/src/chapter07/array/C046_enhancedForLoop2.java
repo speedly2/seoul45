@@ -11,7 +11,7 @@ public class C046_enhancedForLoop2 {
 		
 		for (int[] student : score) {
 			for (int subject : student) {
-				System.out.print(subject + ", ");
+				System.out.print(subject + " ");
 			}
 			System.out.println();
 		}

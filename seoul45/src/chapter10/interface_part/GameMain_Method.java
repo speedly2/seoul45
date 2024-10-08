@@ -32,39 +32,42 @@ public class GameMain_Method {
 	//스탯 힘, 민첩, 지능을 랜덤한 숫자로 스탯의 총 합이 15이상일 경우에만 부여한다.
 	//사용자의 선택에 따라 저장 or 스탯 재부여 한다.
 	public Novice createCharacter() {
-		Scanner scan = new Scanner(System.in);
-		Random ran = new Random();
-		System.out.println("캐릭터를 생성합니다.");
-		System.out.print("사용하실 아이디를 입력해 주세요 : ");
-		String id = scan.next();
-		int str = 0, dex = 0, intel = 0, sum = 0;
-		
-		String text = "";
-		while(true) {
-			System.out.println("스탯을 부여합니다. ");
+		Novice novice = null;
+		try(Scanner scan = new Scanner(System.in)){
+			Random ran = new Random();
+			System.out.println("캐릭터를 생성합니다.");
+			System.out.print("사용하실 아이디를 입력해 주세요 : ");
+			String id = scan.next();
+			int str = 0, dex = 0, intel = 0, sum = 0;
 			
+			String text = "";
 			while(true) {
-				str = ran.nextInt(10);
-				dex = ran.nextInt(10);
-				intel = ran.nextInt(10);
-				sum = str + dex + intel;
-				//스탯의 총 합이 15이상일 때까지 각 스탯에 랜덤한 숫자 부여
-				if(sum >= 15)
+				System.out.println("스탯을 부여합니다. ");
+				
+				while(true) {
+					str = ran.nextInt(10);
+					dex = ran.nextInt(10);
+					intel = ran.nextInt(10);
+					sum = str + dex + intel;
+					//스탯의 총 합이 15이상일 때까지 각 스탯에 랜덤한 숫자 부여
+					if(sum >= 15)
+						break;
+				}
+				
+				System.out.printf("부여된 스탯정보: 힘[%d], 민첩[%d], 지능[%d]\n", str, dex, intel);
+				System.out.print("스탯을 다시 받으시겠습니까? (y/n) : ");
+				text = scan.next();
+				
+				if(text.equals("n"))
 					break;
+				
 			}
 			
-			System.out.printf("부여된 스탯정보: 힘[%d], 민첩[%d], 지능[%d]\n", str, dex, intel);
-			System.out.print("스탯을 다시 받으시겠습니까? (y/n) : ");
-			text = scan.next();
-			
-			if(text.equals("n"))
-				break;
-			
+			System.out.println("현재 정보로 저장합니다.");
+			novice = new Novice(id, str, dex, intel);
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
-		
-		System.out.println("현재 정보로 저장합니다.");
-		Novice novice = new Novice(id, str, dex, intel);
-		
 		return novice;
 	}
 	

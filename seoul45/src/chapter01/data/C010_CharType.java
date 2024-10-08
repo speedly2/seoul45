@@ -12,6 +12,13 @@ public class C010_CharType {
 		System.out.println(i);
 
 		// 탈출 문자(escape sequence)
+/*
+		\n : 개행
+		\t : 수평 tab
+		\\ : \ 출력
+		\' : ' 출력
+		\" : " 출력
+ */
 		// 문자열 안에서 특수한 기능을 수행하는 명령어
 		System.out.println(" 안 녕 하 \n 세 요 ");
 		System.out.println(" 안 녕 하 \t 세 요 ");

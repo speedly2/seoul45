@@ -26,6 +26,7 @@ public class C111_collection_linkedList1 {
 		}
 
 		// Iterator 반복자 -역순
+		// Iterator와 달리 ListIterator는 앞뒤 양방향으로 이동할 수 있으며, 순회 중에도 리스트의 요소를 수정할 수 있는 추가적인 기능을 제공
 		System.out.println("========");
 		ListIterator<String> it2 = arName.listIterator(arName.size());
 		while (it2.hasPrevious()) {

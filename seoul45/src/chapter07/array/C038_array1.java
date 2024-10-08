@@ -1,5 +1,7 @@
 package chapter07.array;
 
+import java.lang.reflect.Array;
+
 public class C038_array1 {
 
 	public static void main(String[] args) {
@@ -18,6 +20,7 @@ public class C038_array1 {
 		int arr6[];
 //		arr6 = {9, 10, 11};			//err
 
+		// 배열의 length 속성은 컴파일러에 의해 자동으로 제공되는 특수한 필드로, 배열 객체가 생성될 때 자동으로 설정
 		for (int i = 0; i < arr3.length; i++) {
 			System.out.print(arr3[i] + " ");
 		}

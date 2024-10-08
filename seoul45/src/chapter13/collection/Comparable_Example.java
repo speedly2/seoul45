@@ -1,9 +1,12 @@
 package chapter13.collection;
 
+import java.util.HashMap;
 import java.util.Set;
 import java.util.TreeSet;
 
-class Member implements Comparable<Member>{
+class Member 
+implements Comparable<Member>
+{
 
 	String name;
 	int age;
@@ -15,7 +18,7 @@ class Member implements Comparable<Member>{
 
 	@Override
 	public int compareTo(Member m) {
-		return (this.name.compareTo(m.name));	// 역순 * -1
+		return this.name.compareTo(m.name);	// 역순 * -1
 	}
 
 	@Override

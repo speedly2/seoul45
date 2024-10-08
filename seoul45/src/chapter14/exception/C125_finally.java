@@ -9,6 +9,7 @@ public class C125_finally {
 			throw new Exception();
 		}
 		catch(Exception e) {
+			System.out.println(e.getMessage());
 			System.out.println("예외 처리");
 		}
 		finally {

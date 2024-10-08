@@ -13,9 +13,13 @@ public class C051_shallowCopy {
 		bookArray1[2] = new Book("어떻게 살 것인가", "유시민");
 		System.arraycopy(bookArray1, 0, bookArray2, 0, 3);
 		
+		// 실제 주소값은 아니고 주소값과 관련한 정보를 hashcode를 통해서 출력한 것 뿐 (디버깅 목적)
 		System.out.println("주소값1: " + bookArray1);
 		System.out.println("주소값2: " + bookArray2);
 		System.out.println("주소값3: " + bookArray3);
+		System.out.println(System.identityHashCode(bookArray1));
+		System.out.println(System.identityHashCode(bookArray2));
+		System.out.println(System.identityHashCode(bookArray3));
 		
 		for (int i = 0; i < bookArray2.length; i++) {
 			bookArray2[i].showBookInfo();

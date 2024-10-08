@@ -10,10 +10,13 @@ interface B {
 	void methodB();
 }
 
+abstract class C {
+	abstract void methodC();
+}
+
 public class C149_anonymousClass {
 
 	public static void main(String[] args) {
-		// 익명클래스
 		A a = new A();
 		a.method();
 		
@@ -32,6 +35,13 @@ public class C149_anonymousClass {
 				System.out.println("B");
 			}
 		}.methodB();
+		
+		new C() {
+			@Override
+			void methodC() {
+				System.out.println("C");
+			}
+		}.methodC();
 
 	}
 

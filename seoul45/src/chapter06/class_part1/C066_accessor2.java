@@ -41,11 +41,13 @@ class Time2 {
 	}
 }
 
-public class C066_accessor {
+public class C066_accessor2 {
 
 	public static void main(String[] args) {
 		// 접근 지정자
 		Time2 now = new Time2(12, 34, 56);
+//		System.out.println(now.hour);	// 에러
+//		System.out.println(now.minute); // 에러
 		now.whatTime2();
 		// now.hour = 34;			// 에러
 		now.setHour(34);			// 거부
@@ -54,6 +56,9 @@ public class C066_accessor {
 		now.setHour(10);			// 가능
 		now.setMinute(45);			// 가능
 		now.whatTime2();
+		System.out.println(now.getHour());
+		System.out.println(now.getMinute());
+		System.out.println(now.getSecond());
 	}
 
 }

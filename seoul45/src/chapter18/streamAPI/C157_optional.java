@@ -25,6 +25,8 @@ class Human {
 
 public class C157_optional {
 
+	// Optional을 사용하면 null 대신 빈 Optional 객체를 반환하거나, 값이 있을 때만 접근하도록 강제하여 이러한 문제를 피할 수 있습니다.
+	
 	public static void main(String[] args) {
 		Human kim = new Human(29, "김상형", "레노보");
 		useBook(kim);
@@ -37,7 +39,8 @@ public class C157_optional {
 		human.book.ifPresent(b -> System.out.println("내 노트북 : " + b.model));
 		
 		//orElse : if-else문과 비슷
-		Notebook book = human.book.orElse(new Notebook("싸구려"));
+		Notebook book = human.book.orElse(new Notebook("없음"));
 		System.out.println("내 노트북 : "  + book.model);
+		System.out.println("============");
 	}
 }

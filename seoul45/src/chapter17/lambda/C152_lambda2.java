@@ -3,7 +3,7 @@ package chapter17.lambda;
 interface Add {
 	int add(int x, int y);
 }
-public class C151_lambda2 {
+public class C152_lambda2 {
 
 	public static void main(String[] args) {
 /*
@@ -35,7 +35,9 @@ public class C151_lambda2 {
 		// 람다식 변수 할당
 		Add lambda = (x, y) -> x + y; // 함수를 변수에 할당
 		Add lambda2 = (x, y) -> { return x + y; };
+		System.out.println(lambda);
         System.out.println(lambda.add(1, 2)); // 함수 사용
+        System.out.println(lambda2.add(1, 2)); // 함수 사용
 		
 		// 람다식 매개변수 할당
 		int n = result( (x, y) -> x + y ); // 메소드의 매개변수에 람다식을 전달
