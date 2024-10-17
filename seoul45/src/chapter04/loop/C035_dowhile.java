@@ -11,6 +11,13 @@ public class C035_dowhile {
 		Scanner scaner = new Scanner(System.in);
 		int num;
 		int sum = 0;
+		
+//		System.out.print("숫자를 입력하세요(끝낼 때 0) : ");
+//		num = scaner.nextInt();
+//		while (num != 0) {
+//			
+//		}
+		
 		do {
 			System.out.print("숫자를 입력하세요(끝낼 때 0) : ");
 			num = scaner.nextInt();

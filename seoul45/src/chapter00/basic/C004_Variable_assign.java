@@ -1,6 +1,6 @@
 package chapter00.basic;
 
-public class C005_Variable_assign {
+public class C004_Variable_assign {
 
 	public static void main(String[] args) {
 		// 변수의 선언

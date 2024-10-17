@@ -34,7 +34,7 @@ public class C006_DataType {
 		var v2 = 123;
 		String s = "안녕하세요";
 		String n = null;
-		
+
 		System.out.println("byte   : " + a);
 		System.out.println("short  : " + b);
 		System.out.println("int    : " + c);
@@ -70,7 +70,7 @@ public class C006_DataType {
 			ASCII = 128개 
 			알파벳과 통화를 포함한 미국을 중심으로 한 영어권에서 사용
 			컴퓨터 대중화로 서유럽 언어의 알파벳을 추가
-			ISO-8859-1 = 256개	(초창기 HTML 표준 언어 코드)
+			ISO-8859-1 = 256개	(초창기 HTML 표준 언어 코드)		-유럽
 			컴퓨터 산업의 확대로 그 외의 다른 언어를 사용하는 지역이 문제
 			독자적 코드를 생산
 			한국 KSC5601-1987

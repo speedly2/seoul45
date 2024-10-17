@@ -10,7 +10,6 @@ public class If_Example03 {
 		출력 결과 :
 			정수 입력: 4
 			짝수입니다.
-
  */
 		Scanner scan = new Scanner(System.in);
 		System.out.print("정수 입력: ");

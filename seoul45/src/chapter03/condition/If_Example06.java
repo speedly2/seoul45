@@ -16,7 +16,9 @@ public class If_Example06 {
 		
 		키(cm), 몸무게를 입력받아 BMI를 계산하시오.
 		출력결과
-		BMI지수: 20.xxxxx(정상)
+			키: 180.8
+			몸무게: 80.5
+			BMI 지수: 24.626292192027567 (과체중)
 */
 		Scanner scan = new Scanner(System.in);
 		System.out.print("키: ");
@@ -26,6 +28,7 @@ public class If_Example06 {
 		
 		height /= 100;		//미터단위로 변환 //height = height / 100;
 		double bmi = weight / (height * height);
+//		double bmi = weight / Math.pow(height, 2);	//제곱 연산
 		String result = "";
 		
 		if(bmi < 18.5) {

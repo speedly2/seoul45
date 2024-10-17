@@ -25,6 +25,27 @@ public class Loop_Example02 {
 		}
 		
 		System.out.println(sum);
+		
+		sum = 0;
+		int cnt = 0;
+		while (cnt < 5) {
+			System.out.print("정수 입력: ");
+			int num = scan.nextInt();
+			sum += num;
+			cnt++;
+		}
+		System.out.println(sum);
+		
+		sum = 0;
+		cnt = 0;
+		do {
+			System.out.print("정수 입력: ");
+			int num = scan.nextInt();
+			sum += num;
+			cnt++;
+		} while (cnt < 5);
+		System.out.println(sum);
+		
 	}
 
 }

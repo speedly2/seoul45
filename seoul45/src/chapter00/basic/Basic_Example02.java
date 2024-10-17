@@ -5,6 +5,15 @@ import java.util.Scanner;
 public class Basic_Example02 {
 
 	public static void main(String[] args) {
+/*
+		이름, 나이, 키를 입력받아 출력하세요.
+		출력결과
+			이름 : 홍길동
+			나이 : 20
+			키 : 188.9
+			이름은 홍길동이고 나이는 20세, 키는 188.9Cm입니다.
+ */
+		
 		//키보드로 입력받을 준비
 		Scanner sc = new Scanner(System.in);
 		//이름

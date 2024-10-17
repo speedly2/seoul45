@@ -3,25 +3,21 @@ package chapter04.loop;
 public class C029_for2 {
 
 	public static void main(String[] args) {
-		// 제어변수 활용
-		for (int i = 0, j = 1; i < 5; i++, j = j + 2){
-			System.out.println("i = " + i + ", j = " + j);
+		// over 100
+		int sum = 0;
+		int i;
+		for (i = 1; i < 100; i++) {
+			sum = sum + i;
+			if (sum > 100) break;
 		}
 		
-//		System.out.println(i);	//지역변수 err
-		
-		
-		// 전역변수
-		int globalVariable = 10;
-		
-		if (true) {
-			System.out.println("IF문내 전역변수 출력: " + globalVariable);
-			
-			int localVariable = 100;
-			System.out.println("IF문내 지역변수 출력: " + localVariable);
+		System.out.println("합계가 100이 넘는 시점은 " + i + "입니다.");
+
+		int sum2 = 0;
+		for (i = 1; i <= 14; i++) {
+			sum2 += i;
 		}
-		System.out.println("IF문밖 전역변수 출력: " + globalVariable);
-//		System.out.println("IF문밖 지역변수 출력: " + localVariable);		//err
+		System.out.println(sum2);
 	}
 
 }

@@ -1,6 +1,6 @@
 package chapter02.operator;
 
-public class C018_Operator3 {
+public class C018_Operator4 {
 
 	public static void main(String[] args) {
 		// 논리 연산자
@@ -27,7 +27,8 @@ public class C018_Operator3 {
 		int num = 10;
 		int i = 2;
 		
-		boolean value = ((num = num + 10) < 10) && ((i = i + 2) < 10);
+//		boolean value = ((num = num + 10) < 10) && ((i = i + 2) < 10);
+		boolean value = (((i = i + 2) < 10 && (num = num + 10) < 10));
 		System.out.println(value);
 		System.out.println(num);
 		System.out.println(i);			// i값이 변하지 않음
@@ -35,7 +36,7 @@ public class C018_Operator3 {
 		num = 10;
 		i = 2;
 		
-		value = ((num = num + 10) > 10) || ((i = i + 2) < 10);
+		value = ((num += 10) > 10) || ((i = i + 2) < 10);
 		System.out.println(value);
 		System.out.println(num);
 		System.out.println(i);

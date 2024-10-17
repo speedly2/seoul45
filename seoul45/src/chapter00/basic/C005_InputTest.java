@@ -2,7 +2,7 @@ package chapter00.basic;
 
 import java.util.Scanner;
 
-public class C004_InputTest {
+public class C005_InputTest {
 
 	public static void main(String[] args) {
 		// 입력
@@ -35,6 +35,7 @@ public class C004_InputTest {
 		//NextInt가 숫자는 입력받고, 사용가가 입력한 개행문자(엔터)를 제거하지 않은 채 그대로 남겨둔다.
 		//NextLine은 개행문자를 포함하여 입력을 받기 때문에 남겨진 개행문자를 입력받은 것으로 메소드를 종료.
 		int h = scan.nextInt();
+//		scan.nextLine();
 		String i = scan.nextLine();
 		System.out.println(h);
 		System.out.println(i);

@@ -16,9 +16,7 @@ public class C012_ImplicitConversion {
 		System.out.println(iNum2);
 		System.out.println(fNum);
 		
-		double dNum;
-		dNum = fNum + iNum2;
-		System.out.println(dNum);
+
 
 	}
 

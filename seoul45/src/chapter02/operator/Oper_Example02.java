@@ -23,13 +23,12 @@ public class Oper_Example02 {
 		System.out.print("영어: ");
 		int eng = scan.nextInt();
 		System.out.print("수학: ");
-		int math = scan.nextInt();	
-		double avg = ( kor + eng + math ) / 3;		
+		int math = scan.nextInt();
+		double avg = ( kor + eng + math ) / 3.0;		
 		boolean result = (avg >= 60)			//true or false
 							&& (kor  >= 40)		//true or false
 							&& (eng  >= 40)		//true or false
-							&& (math >= 40);	//true or false		
+							&& (math >= 40);	//true or false
 		System.out.println("합격여부: " + result);
 	}
-
 }

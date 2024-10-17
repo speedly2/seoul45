@@ -21,6 +21,14 @@ public class C028_for1 {
 			sum2 = sum2 + i;
 		}
 		System.out.println("합계2 = " + sum2);
+		
+		int sum3 = 0;
+		for (int i = 0; i <= 100; i++) {
+			if (i % 2 != 0) 
+				continue;
+			sum3 = sum3 + i;
+		}
+		System.out.println(sum3);
 	}
 
 }

@@ -61,6 +61,13 @@ public class C088_hashcode {
 		System.out.println(st3);
 		System.out.println(st4.toString());
 		
+		// 객체의 메모리 주소와 관계가 있는 해시 값 반환
+		System.out.println("=== identityHashCode ===");
+		System.out.println(System.identityHashCode(st1));
+		System.out.println(System.identityHashCode(st2));
+		System.out.println(System.identityHashCode(st3));
+		System.out.println(System.identityHashCode(st4));
+		
 	}
 
 }

@@ -14,6 +14,10 @@ public class C014_ArithmeticConversion {
 		System.out.println(iNum3);
 		System.out.println(iNum4);
 		System.out.println(iNum5);
+		
+		
+		double dNum2 = 0.9;
+		System.out.println(dNum1 + dNum2);
 	}
 
 }

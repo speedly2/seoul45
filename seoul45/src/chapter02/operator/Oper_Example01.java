@@ -19,14 +19,14 @@ public class Oper_Example01 {
 		//상품가격
 		int price = 0;
 		//거스름돈
-		int charge = 0;
+		int change = 0;
 		
 		System.out.print("받은 금액 : ");
 		cash = sc.nextInt();
 		System.out.print("상품가격 : ");
 		price = sc.nextInt();
-		charge = cash - price;
-		System.out.print("거스름돈 : " + charge);
+		change = cash - price;
+		System.out.print("거스름돈 : " + change);
 		sc.close();
 
 	}

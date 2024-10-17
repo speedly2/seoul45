@@ -1,6 +1,8 @@
 package chapter05.method;
 
-public class MethodTest {
+import java.util.Scanner;
+
+public class Method_Example {
 
 	public static void main(String[] args) {
 		// 메서드 만들어보기
@@ -8,7 +10,10 @@ public class MethodTest {
 		methodEx();
 		System.out.println("=============");
 		// 특정 단 출력
-		methodEx(1);
+		Scanner scan = new Scanner(System.in);
+		System.out.print("단: ");
+		int num = scan.nextInt();
+		methodEx(num);
 	}
 
 	public static void methodEx() {

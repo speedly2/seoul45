@@ -22,6 +22,8 @@ public class C003_Variable_name {
 		int kor_score;
 		int totalAvg;
 //		int if;			// x
+		
+		String a ;
 	}
 
 }

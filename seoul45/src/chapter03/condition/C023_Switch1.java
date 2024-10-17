@@ -9,7 +9,7 @@ public class C023_Switch1 {
 		switch (ranking) {
 			case 1:
 				System.out.println("축하합니다. 금메달이에요.");
-				break;
+				break;	//switch문 종료
 			case 2:
 				System.out.println("은메달을 수여합니다.");
 				break;

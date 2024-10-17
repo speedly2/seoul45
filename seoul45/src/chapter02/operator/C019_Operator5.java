@@ -2,7 +2,7 @@ package chapter02.operator;
 
 import java.util.Scanner;
 
-public class C019_Operator4 {
+public class C019_Operator5 {
 
 	public static void main(String[] args) {
 		// 삼항 연산자 & 조건 연산자

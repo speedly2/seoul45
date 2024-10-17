@@ -1,6 +1,6 @@
 package chapter02.operator;
 
-public class C015_Arithmetic {
+public class C015_Operator1 {
 
 	public static void main(String[] args) {
 		// 산술 연산자
@@ -14,7 +14,7 @@ public class C015_Arithmetic {
 		System.out.println("----- % 연산자 -----");
 		System.out.println("6 % 4 = " + 6 % 4);
 		System.out.println("7 % 3 = " + 7 % 3);
-		System.out.println("5.0 % 2.3 = " + 5.0 % 2.3);
+//		System.out.println("5.0 % 2.3 = " + 5.0 % 2.3);
 		System.out.println("14 % 2 = " + 14 % 2);
 		System.out.println("15 % 2 = " + 15 % 2);
 	}

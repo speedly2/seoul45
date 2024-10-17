@@ -1,6 +1,6 @@
 package chapter02.operator;
 
-public class C017_Operator2 {
+public class C017_Operator3 {
 
 	public static void main(String[] args) {
 		// 증감 연산자

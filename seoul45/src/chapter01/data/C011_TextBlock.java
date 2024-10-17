@@ -18,6 +18,7 @@ public class C011_TextBlock {
 		
 		
 		// 텍스트 블록
+		// \s 단일공백문자 삽입
 		String human = """
 				이름 : 김상형    \s        
 				나이 : 39               

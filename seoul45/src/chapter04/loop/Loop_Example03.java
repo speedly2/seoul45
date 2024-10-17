@@ -23,7 +23,7 @@ public class Loop_Example03 {
 
 		int sum = 0;
 		int temp = 0;
-		if(start > end) {
+		if (start > end) {
 			temp = start;
 			start = end;
 			end = temp;
@@ -34,7 +34,19 @@ public class Loop_Example03 {
 		}
 		
 		System.out.println(sum);
-
+		
+		//2
+//		int sum = 0;
+//		if (start > end) {
+//			for (int i = end; i <= start; i++) {
+//				sum += i;
+//			}
+//		} else {
+//			for (int i = start; i <= end; i++) {
+//				sum += i;
+//			}
+//		}
+//		System.out.println(sum);
 	}
 
 }
